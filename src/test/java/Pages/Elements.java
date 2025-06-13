@@ -10,7 +10,18 @@ public class Elements extends ParentPage{
         PageFactory.initElements(GWD.getDriver(),this);
     }
 
+    @FindBy(css = "[formcontrolname='username']")
+    public WebElement username;
 
+    @FindBy(css = "[formcontrolname='password']")
+    public WebElement password;
 
+    @FindBy(css = "[aria-label='LOGIN']")
+    public WebElement loginBTN;
 
+    @FindBy(css = "[class='logo-text']")
+    public WebElement internshipTXT;
+
+    @FindBy(css = "[class='mat-expansion-panel-header-description'] div")
+    public WebElement invalidUserMSG;
 }
